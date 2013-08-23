@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88842CDC-8C28-4207-A402-8CA7598AD255}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WISD.CarERP.Web</RootNamespace>
+    <AssemblyName>WISD.CarERP.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.6.3.31281, Culture=neutral, PublicKeyToken=4f86767c9b519a06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\AutoParts\PurchaseReturn\PurchaseReturnList.aspx.cs">
+      <DependentUpon>PurchaseReturnList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\AutoParts\PurchaseReturn\PurchaseReturnList.aspx.designer.cs">
+      <DependentUpon>PurchaseReturnList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\AutoParts\PurchaseStorage\PurchaseStorageList.aspx.cs">
+      <DependentUpon>PurchaseStorageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\AutoParts\PurchaseStorage\PurchaseStorageList.aspx.designer.cs">
+      <DependentUpon>PurchaseStorageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\AutoParts\SalesReturn\SalesReturnList.aspx.cs">
+      <DependentUpon>SalesReturnList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\AutoParts\SalesReturn\SalesReturnList.aspx.designer.cs">
+      <DependentUpon>SalesReturnList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\AutoParts\SalesSlip\SalesSlipList.aspx.cs">
+      <DependentUpon>SalesSlipList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\AutoParts\SalesSlip\SalesSlipList.aspx.designer.cs">
+      <DependentUpon>SalesSlipList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\AutoRepair\CompletionAudit\CompletionAuditList.aspx.cs">
+      <DependentUpon>CompletionAuditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\AutoRepair\CompletionAudit\CompletionAuditList.aspx.designer.cs">
+      <DependentUpon>CompletionAuditList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\AutoRepair\DelegateRepair\DelegateRepairList.aspx.cs">
+      <DependentUpon>DelegateRepairList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\AutoRepair\DelegateRepair\DelegateRepairList.aspx.designer.cs">
+      <DependentUpon>DelegateRepairList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\AutoRepair\MaintenancePicking\MaintenancePickingList.aspx.cs">
+      <DependentUpon>MaintenancePickingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\AutoRepair\MaintenancePicking\MaintenancePickingList.aspx.designer.cs">
+      <DependentUpon>MaintenancePickingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\AutoRepair\WorkDispatch\WorkDispatchList.aspx.cs">
+      <DependentUpon>WorkDispatchList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\AutoRepair\WorkDispatch\WorkDispatchList.aspx.designer.cs">
+      <DependentUpon>WorkDispatchList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryDataList.aspx.cs">
+      <DependentUpon>DictionaryDataList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryDataList.aspx.designer.cs">
+      <DependentUpon>DictionaryDataList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryFieldAdd.aspx.cs">
+      <DependentUpon>DictionaryFieldAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryFieldAdd.aspx.designer.cs">
+      <DependentUpon>DictionaryFieldAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryFieldEdit.aspx.cs">
+      <DependentUpon>DictionaryFieldEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryFieldEdit.aspx.designer.cs">
+      <DependentUpon>DictionaryFieldEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryFieldList.aspx.cs">
+      <DependentUpon>DictionaryFieldList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryFieldList.aspx.designer.cs">
+      <DependentUpon>DictionaryFieldList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryItemAdd.aspx.cs">
+      <DependentUpon>DictionaryItemAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryItemAdd.aspx.designer.cs">
+      <DependentUpon>DictionaryItemAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryItemEdit.aspx.cs">
+      <DependentUpon>DictionaryItemEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryItemEdit.aspx.designer.cs">
+      <DependentUpon>DictionaryItemEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryItemList.aspx.cs">
+      <DependentUpon>DictionaryItemList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\BasicData\DataDictionary\DictionaryItemList.aspx.designer.cs">
+      <DependentUpon>DictionaryItemList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\BusinessAccounting\AccountingPeriod\AccountingPeriodList.aspx.cs">
+      <DependentUpon>AccountingPeriodList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\BusinessAccounting\AccountingPeriod\AccountingPeriodList.aspx.designer.cs">
+      <DependentUpon>AccountingPeriodList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\BusinessAccounting\CostManage\CostManageList.aspx.cs">
+      <DependentUpon>CostManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\BusinessAccounting\CostManage\CostManageList.aspx.designer.cs">
+      <DependentUpon>CostManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\BusinessAccounting\UnsureInventory\UnsureInventoryList.aspx.cs">
+      <DependentUpon>UnsureInventoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\BusinessAccounting\UnsureInventory\UnsureInventoryList.aspx.designer.cs">
+      <DependentUpon>UnsureInventoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\InventoryManage\InventoryFetch\InventoryFetchList.aspx.cs">
+      <DependentUpon>InventoryFetchList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\InventoryManage\InventoryFetch\InventoryFetchList.aspx.designer.cs">
+      <DependentUpon>InventoryFetchList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\InventoryManage\InventoryQuery\InventoryQueryList.aspx.cs">
+      <DependentUpon>InventoryQueryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\InventoryManage\InventoryQuery\InventoryQueryList.aspx.designer.cs">
+      <DependentUpon>InventoryQueryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\InventoryManage\InventoryTransfer\InventoryTransferList.aspx.cs">
+      <DependentUpon>InventoryTransferList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\InventoryManage\InventoryTransfer\InventoryTransferList.aspx.designer.cs">
+      <DependentUpon>InventoryTransferList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\InventoryManage\MaterialReturn\MaterialReturnList.aspx.cs">
+      <DependentUpon>MaterialReturnList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\InventoryManage\MaterialReturn\MaterialReturnList.aspx.designer.cs">
+      <DependentUpon>MaterialReturnList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\InventoryManage\ProfitLoss\ProfitLossList.aspx.cs">
+      <DependentUpon>ProfitLossList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\InventoryManage\ProfitLoss\ProfitLossList.aspx.designer.cs">
+      <DependentUpon>ProfitLossList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\InventoryManage\UnsalableQuery\UnsalableQueryList.aspx.cs">
+      <DependentUpon>UnsalableQueryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\InventoryManage\UnsalableQuery\UnsalableQueryList.aspx.designer.cs">
+      <DependentUpon>UnsalableQueryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ReceivablesPayables\PayablesDetail\PayablesDetailList.aspx.cs">
+      <DependentUpon>PayablesDetailList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ReceivablesPayables\PayablesDetail\PayablesDetailList.aspx.designer.cs">
+      <DependentUpon>PayablesDetailList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ReceivablesPayables\PayablesLedger\PayablesLedgerList.aspx.cs">
+      <DependentUpon>PayablesLedgerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ReceivablesPayables\PayablesLedger\PayablesLedgerList.aspx.designer.cs">
+      <DependentUpon>PayablesLedgerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ReceivablesPayables\ReceivablesDetail\ReceivablesDetailList.aspx.cs">
+      <DependentUpon>ReceivablesDetailList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ReceivablesPayables\ReceivablesDetail\ReceivablesDetailList.aspx.designer.cs">
+      <DependentUpon>ReceivablesDetailList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ReceivablesPayables\ReceivablesLedger\ReceivablesLedgerList.aspx.cs">
+      <DependentUpon>ReceivablesLedgerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ReceivablesPayables\ReceivablesLedger\ReceivablesLedgerList.aspx.designer.cs">
+      <DependentUpon>ReceivablesLedgerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ReceivablesPayables\VoucherEntry\VoucherEntryList.aspx.cs">
+      <DependentUpon>VoucherEntryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ReceivablesPayables\VoucherEntry\VoucherEntryList.aspx.designer.cs">
+      <DependentUpon>VoucherEntryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\SystemManage\CompanyManage\CompanyManageEdit.aspx.cs">
+      <DependentUpon>CompanyManageEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\SystemManage\CompanyManage\CompanyManageEdit.aspx.designer.cs">
+      <DependentUpon>CompanyManageEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\SystemManage\CompanyManage\CompanyManageList.aspx.cs">
+      <DependentUpon>CompanyManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\SystemManage\CompanyManage\CompanyManageList.aspx.designer.cs">
+      <DependentUpon>CompanyManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\SystemManage\DeptManage\DeptManageEdit.aspx.cs">
+      <DependentUpon>DeptManageEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\SystemManage\DeptManage\DeptManageEdit.aspx.designer.cs">
+      <DependentUpon>DeptManageEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\SystemManage\DeptManage\DeptManageList.aspx.cs">
+      <DependentUpon>DeptManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\SystemManage\DeptManage\DeptManageList.aspx.designer.cs">
+      <DependentUpon>DeptManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\SystemManage\RoleManage\RoleManageList.aspx.cs">
+      <DependentUpon>RoleManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\SystemManage\RoleManage\RoleManageList.aspx.designer.cs">
+      <DependentUpon>RoleManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\SystemManage\UserManage\UserManageList.aspx.cs">
+      <DependentUpon>UserManageList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\SystemManage\UserManage\UserManageList.aspx.designer.cs">
+      <DependentUpon>UserManageList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\BasicPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utility\ValidateCode.aspx.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utility\ValidateCode.aspx.designer.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\Pagination.css" />
+    <Content Include="CSS\Style.css" />
+    <Content Include="DLL\FredCK.FCKeditorV2.dll" />
+    <Content Include="Image\add.gif" />
+    <Content Include="Image\back.gif" />
+    <Content Include="Image\btn3.gif" />
+    <Content Include="Image\btn_bg.gif" />
+    <Content Include="Image\butClose.gif" />
+    <Content Include="Image\butOpen.gif" />
+    <Content Include="Image\button_submit.gif" />
+    <Content Include="Image\close.gif" />
+    <Content Include="Image\col.gif" />
+    <Content Include="Image\correct.gif" />
+    <Content Include="Image\disable.gif" />
+    <Content Include="Image\error.gif" />
+    <Content Include="Image\exp.gif" />
+    <Content Include="Image\focus_bg.jpg" />
+    <Content Include="Image\folder.gif" />
+    <Content Include="Image\folder_open.gif" />
+    <Content Include="Image\foot_bg.gif" />
+    <Content Include="Image\head_bg.gif" />
+    <Content Include="Image\head_bg2.gif" />
+    <Content Include="Image\head_logo.gif" />
+    <Content Include="Image\head_logo.png" />
+    <Content Include="Image\hint.gif" />
+    <Content Include="Image\hintbg1.gif" />
+    <Content Include="Image\hintbg2.gif" />
+    <Content Include="Image\home.gif" />
+    <Content Include="Image\ico-0.png" />
+    <Content Include="Image\ico-0_.png" />
+    <Content Include="Image\ico-1.png" />
+    <Content Include="Image\ico-1_.png" />
+    <Content Include="Image\ico-2.png" />
+    <Content Include="Image\ico-2_.png" />
+    <Content Include="Image\ico-3.png" />
+    <Content Include="Image\ico-3_.png" />
+    <Content Include="Image\ico-4.png" />
+    <Content Include="Image\ico-4_.png" />
+    <Content Include="Image\ico-5.png" />
+    <Content Include="Image\ico-5_.png" />
+    <Content Include="Image\ico-6.png" />
+    <Content Include="Image\icon-01.gif" />
+    <Content Include="Image\icon-02.gif" />
+    <Content Include="Image\icon-03.gif" />
+    <Content Include="Image\ico_01.gif" />
+    <Content Include="Image\img_Show.gif" />
+    <Content Include="Image\input_bg.jpg" />
+    <Content Include="Image\left_menu_bg.gif" />
+    <Content Include="Image\loading.gif" />
+    <Content Include="Image\lock.png" />
+    <Content Include="Image\login_bg.jpg" />
+    <Content Include="Image\login_btn.gif" />
+    <Content Include="Image\main_36.gif" />
+    <Content Include="Image\main_cen_bg.gif" />
+    <Content Include="Image\menu_bg.gif" />
+    <Content Include="Image\menu_dot.gif" />
+    <Content Include="Image\navsub_bg.gif" />
+    <Content Include="Image\nav_bg.gif" />
+    <Content Include="Image\nopic.gif" />
+    <Content Include="Image\pro_bg.gif" />
+    <Content Include="Image\siteico.gif" />
+    <Content Include="Image\ssbtn.gif" />
+    <Content Include="Image\success.gif" />
+    <Content Include="Image\t.gif" />
+    <Content Include="Image\table_th_bg.gif" />
+    <Content Include="Image\tabsleft.gif" />
+    <Content Include="Image\tabsright.gif" />
+    <Content Include="Image\tdClose_Hover.png" />
+    <Content Include="Image\top_ico1.gif" />
+    <Content Include="Image\top_ico2.gif" />
+    <Content Include="Image\txt_Show.gif" />
+    <Content Include="Image\upfilebg.gif" />
+    <Content Include="Image\warning.gif" />
+    <Content Include="Image\wsh01.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="JS\CheckAll.js" />
+    <Content Include="JS\cursorfocus.js" />
+    <Content Include="JS\Index.js" />
+    <Content Include="JS\jquery-1.7.2.js" />
+    <Content Include="JS\jquery.pagination.js" />
+    <Content Include="JS\jquery.validate.min.js" />
+    <Content Include="JS\MessageBox.js" />
+    <Content Include="JS\messages_cn.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Module\AutoParts\PurchaseReturn\PurchaseReturnList.aspx" />
+    <Content Include="Module\AutoParts\PurchaseStorage\PurchaseStorageList.aspx" />
+    <Content Include="Module\AutoParts\SalesReturn\SalesReturnList.aspx" />
+    <Content Include="Module\AutoParts\SalesSlip\SalesSlipList.aspx" />
+    <Content Include="Module\AutoRepair\CompletionAudit\CompletionAuditList.aspx" />
+    <Content Include="Module\AutoRepair\DelegateRepair\DelegateRepairList.aspx" />
+    <Content Include="Module\AutoRepair\MaintenancePicking\MaintenancePickingList.aspx" />
+    <Content Include="Module\AutoRepair\WorkDispatch\WorkDispatchList.aspx" />
+    <Content Include="Module\BasicData\DataDictionary\DictionaryDataList.aspx" />
+    <Content Include="Module\BasicData\DataDictionary\DictionaryFieldAdd.aspx" />
+    <Content Include="Module\BasicData\DataDictionary\DictionaryFieldEdit.aspx" />
+    <Content Include="Module\BasicData\DataDictionary\DictionaryFieldList.aspx" />
+    <Content Include="Module\BasicData\DataDictionary\DictionaryItemAdd.aspx" />
+    <Content Include="Module\BasicData\DataDictionary\DictionaryItemEdit.aspx" />
+    <Content Include="Module\BasicData\DataDictionary\DictionaryItemList.aspx" />
+    <Content Include="Module\BusinessAccounting\AccountingPeriod\AccountingPeriodList.aspx" />
+    <Content Include="Module\BusinessAccounting\CostManage\CostManageList.aspx" />
+    <Content Include="Module\BusinessAccounting\UnsureInventory\UnsureInventoryList.aspx" />
+    <Content Include="Module\InventoryManage\InventoryFetch\InventoryFetchList.aspx" />
+    <Content Include="Module\InventoryManage\InventoryQuery\InventoryQueryList.aspx" />
+    <Content Include="Module\InventoryManage\InventoryTransfer\InventoryTransferList.aspx" />
+    <Content Include="Module\InventoryManage\MaterialReturn\MaterialReturnList.aspx" />
+    <Content Include="Module\InventoryManage\ProfitLoss\ProfitLossList.aspx" />
+    <Content Include="Module\InventoryManage\UnsalableQuery\UnsalableQueryList.aspx" />
+    <Content Include="Module\ReceivablesPayables\PayablesDetail\PayablesDetailList.aspx" />
+    <Content Include="Module\ReceivablesPayables\PayablesLedger\PayablesLedgerList.aspx" />
+    <Content Include="Module\ReceivablesPayables\ReceivablesDetail\ReceivablesDetailList.aspx" />
+    <Content Include="Module\ReceivablesPayables\ReceivablesLedger\ReceivablesLedgerList.aspx" />
+    <Content Include="Module\ReceivablesPayables\VoucherEntry\VoucherEntryList.aspx" />
+    <Content Include="Module\SystemManage\CompanyManage\CompanyManageEdit.aspx" />
+    <Content Include="Module\SystemManage\CompanyManage\CompanyManageList.aspx" />
+    <Content Include="Module\SystemManage\DeptManage\DeptManageEdit.aspx" />
+    <Content Include="Module\SystemManage\DeptManage\DeptManageList.aspx" />
+    <Content Include="Module\SystemManage\RoleManage\RoleManageList.aspx" />
+    <Content Include="Module\SystemManage\UserManage\UserManageList.aspx" />
+    <Content Include="Package\DatePicker\calendar.js" />
+    <Content Include="Package\DatePicker\config.js" />
+    <Content Include="Package\DatePicker\lang\en.js" />
+    <Content Include="Package\DatePicker\lang\zh-cn.js" />
+    <Content Include="Package\DatePicker\lang\zh-tw.js" />
+    <Content Include="Package\DatePicker\My97DatePicker.htm" />
+    <Content Include="Package\DatePicker\skin\datePicker.gif" />
+    <Content Include="Package\DatePicker\skin\default\datepicker.css" />
+    <Content Include="Package\DatePicker\skin\default\img.gif" />
+    <Content Include="Package\DatePicker\skin\WdatePicker.css" />
+    <Content Include="Package\DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Package\DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Package\DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Package\DatePicker\WdatePicker.js" />
+    <Content Include="Package\DatePicker\开发包\lang\en.js" />
+    <Content Include="Package\DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="Package\DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="Package\DatePicker\开发包\readme.txt" />
+    <Content Include="Package\DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="Package\DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="Package\DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="Package\DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="Package\DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="Package\DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="Package\DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="Package\FCKedit\editor\css\behaviors\disablehandles.htc" />
+    <Content Include="Package\FCKedit\editor\css\behaviors\showtableborders.htc" />
+    <Content Include="Package\FCKedit\editor\css\fck_editorarea.css" />
+    <Content Include="Package\FCKedit\editor\css\fck_internal.css" />
+    <Content Include="Package\FCKedit\editor\css\fck_showtableborders_gecko.css" />
+    <Content Include="Package\FCKedit\editor\css\images\block_address.png" />
+    <Content Include="Package\FCKedit\editor\css\images\block_blockquote.png" />
+    <Content Include="Package\FCKedit\editor\css\images\block_div.png" />
+    <Content Include="Package\FCKedit\editor\css\images\block_h1.png" />
+    <Content Include="Package\FCKedit\editor\css\images\block_h2.png" />
+    <Content Include="Package\FCKedit\editor\css\images\block_h3.png" />
+    <Content Include="Package\FCKedit\editor\css\images\block_h4.png" />
+    <Content Include="Package\FCKedit\editor\css\images\block_h5.png" />
+    <Content Include="Package\FCKedit\editor\css\images\block_h6.png" />
+    <Content Include="Package\FCKedit\editor\css\images\block_p.png" />
+    <Content Include="Package\FCKedit\editor\css\images\block_pre.png" />
+    <Content Include="Package\FCKedit\editor\css\images\fck_anchor.gif" />
+    <Content Include="Package\FCKedit\editor\css\images\fck_flashlogo.gif" />
+    <Content Include="Package\FCKedit\editor\css\images\fck_hiddenfield.gif" />
+    <Content Include="Package\FCKedit\editor\css\images\fck_pagebreak.gif" />
+    <Content Include="Package\FCKedit\editor\css\images\fck_plugin.gif" />
+    <Content Include="Package\FCKedit\editor\dialog\common\fck_dialog_common.css" />
+    <Content Include="Package\FCKedit\editor\dialog\common\fck_dialog_common.js" />
+    <Content Include="Package\FCKedit\editor\dialog\common\images\locked.gif" />
+    <Content Include="Package\FCKedit\editor\dialog\common\images\reset.gif" />
+    <Content Include="Package\FCKedit\editor\dialog\common\images\unlocked.gif" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_about.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_about\logo_fckeditor.gif" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_about\logo_fredck.gif" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_about\sponsors\spellchecker_net.gif" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_anchor.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_button.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_checkbox.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_colorselector.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_div.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_docprops.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_docprops\fck_document_preview.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_flash.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_flash\fck_flash.js" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_flash\fck_flash_preview.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_form.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_hiddenfield.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_image.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_image\fck_image.js" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_image\fck_image_preview.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_link.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_link\fck_link.js" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_listprop.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_paste.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_radiobutton.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_replace.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_select.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_select\fck_select.js" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_smiley.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_source.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_specialchar.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_spellerpages.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_spellerpages\spellerpages\blank.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_spellerpages\spellerpages\controls.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_spellerpages\spellerpages\controlWindow.js" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_spellerpages\spellerpages\spellchecker.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_spellerpages\spellerpages\spellChecker.js" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_spellerpages\spellerpages\spellerStyle.css" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_spellerpages\spellerpages\wordWindow.js" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_table.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_tablecell.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_template.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_template\images\template1.gif" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_template\images\template2.gif" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_template\images\template3.gif" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_textarea.html" />
+    <Content Include="Package\FCKedit\editor\dialog\fck_textfield.html" />
+    <Content Include="Package\FCKedit\editor\dtd\fck_dtd_test.html" />
+    <Content Include="Package\FCKedit\editor\dtd\fck_xhtml10strict.js" />
+    <Content Include="Package\FCKedit\editor\dtd\fck_xhtml10transitional.js" />
+    <Content Include="Package\FCKedit\editor\fckdebug.html" />
+    <Content Include="Package\FCKedit\editor\fckdialog.html" />
+    <Content Include="Package\FCKedit\editor\fckeditor.html" />
+    <Content Include="Package\FCKedit\editor\fckeditor.original.html" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\browser.css" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\browser.html" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\frmactualfolder.html" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\frmcreatefolder.html" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\frmfolders.html" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\frmresourceslist.html" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\frmresourcetype.html" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\frmupload.html" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\ButtonArrow.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\Folder.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\Folder32.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\FolderOpened.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\FolderOpened32.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\FolderUp.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\ai.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\avi.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\bmp.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\cs.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\default.icon.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\dll.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\doc.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\exe.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\fla.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\gif.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\htm.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\html.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\jpg.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\js.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\mdb.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\mp3.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\pdf.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\png.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\ppt.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\rdp.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\swf.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\swt.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\txt.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\vsd.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\xls.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\xml.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\32\zip.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\ai.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\avi.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\bmp.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\cs.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\default.icon.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\dll.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\doc.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\exe.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\fla.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\gif.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\htm.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\html.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\jpg.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\js.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\mdb.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\mp3.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\pdf.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\png.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\ppt.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\rdp.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\swf.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\swt.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\txt.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\vsd.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\xls.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\xml.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\zip.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\images\spacer.gif" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\js\common.js" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\js\fckxml.js" />
+    <Content Include="Package\FCKedit\editor\filemanager\browser\default\ROYcms_browser.html" />
+    <Content Include="Package\FCKedit\editor\filemanager\connectors\aspx\config.ascx" />
+    <Content Include="Package\FCKedit\editor\filemanager\connectors\aspx\connector.aspx" />
+    <Content Include="Package\FCKedit\editor\filemanager\connectors\aspx\upload.aspx" />
+    <Content Include="Package\FCKedit\editor\images\anchor.gif" />
+    <Content Include="Package\FCKedit\editor\images\arrow_ltr.gif" />
+    <Content Include="Package\FCKedit\editor\images\arrow_rtl.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\angel_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\angry_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\broken_heart.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\cake.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\confused_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\cry_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\devil_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\embaressed_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\envelope.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\heart.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\kiss.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\lightbulb.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\omg_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\regular_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\sad_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\shades_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\teeth_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\thumbs_down.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\thumbs_up.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\tounge_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\whatchutalkingabout_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\smiley\msn\wink_smile.gif" />
+    <Content Include="Package\FCKedit\editor\images\spacer.gif" />
+    <Content Include="Package\FCKedit\editor\js\fckadobeair.js" />
+    <Content Include="Package\FCKedit\editor\js\fckeditorcode_gecko.js" />
+    <Content Include="Package\FCKedit\editor\js\fckeditorcode_ie.js" />
+    <Content Include="Package\FCKedit\editor\lang\zh-cn.js" />
+    <Content Include="Package\FCKedit\editor\lang\zh.js" />
+    <Content Include="Package\FCKedit\editor\plugins\autogrow\fckplugin.js" />
+    <Content Include="Package\FCKedit\editor\plugins\bbcode\fckplugin.js" />
+    <Content Include="Package\FCKedit\editor\plugins\bbcode\_sample\sample.config.js" />
+    <Content Include="Package\FCKedit\editor\plugins\bbcode\_sample\sample.html" />
+    <Content Include="Package\FCKedit\editor\plugins\dragresizetable\fckplugin.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\clipboard.swf" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\run.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushCpp.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushCSharp.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushCss.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushDelphi.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushJava.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushJScript.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushPhp.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushPython.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushRuby.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushSql.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushVb.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shBrushXml.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\dp.SyntaxHighlighter\Scripts\shCore.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\fckplugin.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\highlighter.gif" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\highlighter.html" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\lang\en.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\lang\zh-cn.js" />
+    <Content Include="Package\FCKedit\editor\plugins\highlighter\readme.txt" />
+    <Content Include="Package\FCKedit\editor\plugins\insertmusic\fckplugin.js" />
+    <Content Include="Package\FCKedit\editor\plugins\insertmusic\insertmusic.html" />
+    <Content Include="Package\FCKedit\editor\plugins\insertmusic\lang\en.js" />
+    <Content Include="Package\FCKedit\editor\plugins\insertmusic\lang\zh-cn.js" />
+    <Content Include="Package\FCKedit\editor\plugins\insertmusic\mp3player.swf" />
+    <Content Include="Package\FCKedit\editor\plugins\insertmusic\music.gif" />
+    <Content Include="Package\FCKedit\editor\plugins\placeholder\fckplugin.js" />
+    <Content Include="Package\FCKedit\editor\plugins\placeholder\fck_placeholder.html" />
+    <Content Include="Package\FCKedit\editor\plugins\placeholder\lang\de.js" />
+    <Content Include="Package\FCKedit\editor\plugins\placeholder\lang\en.js" />
+    <Content Include="Package\FCKedit\editor\plugins\placeholder\lang\es.js" />
+    <Content Include="Package\FCKedit\editor\plugins\placeholder\lang\fr.js" />
+    <Content Include="Package\FCKedit\editor\plugins\placeholder\lang\it.js" />
+    <Content Include="Package\FCKedit\editor\plugins\placeholder\lang\pl.js" />
+    <Content Include="Package\FCKedit\editor\plugins\placeholder\placeholder.gif" />
+    <Content Include="Package\FCKedit\editor\plugins\simplecommands\fckplugin.js" />
+    <Content Include="Package\FCKedit\editor\plugins\tablecommands\fckplugin.js" />
+    <Content Include="Package\FCKedit\editor\skins\default\fck_dialog.css" />
+    <Content Include="Package\FCKedit\editor\skins\default\fck_dialog_ie6.js" />
+    <Content Include="Package\FCKedit\editor\skins\default\fck_editor.css" />
+    <Content Include="Package\FCKedit\editor\skins\default\fck_strip.gif" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\dialog.sides.gif" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\dialog.sides.png" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\dialog.sides.rtl.png" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\sprites.gif" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\sprites.png" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\toolbar.arrowright.gif" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\toolbar.buttonarrow.gif" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\toolbar.collapse.gif" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\toolbar.end.gif" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\toolbar.expand.gif" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\toolbar.separator.gif" />
+    <Content Include="Package\FCKedit\editor\skins\default\images\toolbar.start.gif" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\fck_dialog.css" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\fck_dialog_ie6.js" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\fck_editor.css" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\fck_strip.gif" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\dialog.sides.gif" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\dialog.sides.png" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\dialog.sides.rtl.png" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\sprites.gif" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\sprites.png" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\toolbar.arrowright.gif" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\toolbar.bg.gif" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\toolbar.buttonarrow.gif" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\toolbar.collapse.gif" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\toolbar.end.gif" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\toolbar.expand.gif" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\toolbar.separator.gif" />
+    <Content Include="Package\FCKedit\editor\skins\office2003\images\toolbar.start.gif" />
+    <Content Include="Package\FCKedit\editor\skins\silver\fck_dialog.css" />
+    <Content Include="Package\FCKedit\editor\skins\silver\fck_dialog_ie6.js" />
+    <Content Include="Package\FCKedit\editor\skins\silver\fck_editor.css" />
+    <Content Include="Package\FCKedit\editor\skins\silver\fck_strip.gif" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\dialog.sides.gif" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\dialog.sides.png" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\dialog.sides.rtl.png" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\sprites.gif" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\sprites.png" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\toolbar.arrowright.gif" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\toolbar.buttonarrow.gif" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\toolbar.buttonbg.gif" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\toolbar.collapse.gif" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\toolbar.end.gif" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\toolbar.expand.gif" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\toolbar.separator.gif" />
+    <Content Include="Package\FCKedit\editor\skins\silver\images\toolbar.start.gif" />
+    <Content Include="Package\FCKedit\fckconfig.js" />
+    <Content Include="Package\FCKedit\fckeditor.js" />
+    <Content Include="Package\FCKedit\fckstyles.xml" />
+    <Content Include="Package\FCKedit\fcktemplates.xml" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_diagonals-medium_20_423e3e_40x40.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_flat_0_564e4e_40x100.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_flat_0_6b97c1_40x100.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_flat_30_000000_40x100.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_glass_75_08b6ed_1x400.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_glass_75_0cb9ee_1x400.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_glass_75_4cd6f6_1x400.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_glass_75_fddfa1_1x400.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_gloss-wave_75_89a6ca_500x100.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_gloss-wave_75_90b5d6_500x100.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-icons_222222_256x240.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-icons_454545_256x240.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-icons_5587b8_256x240.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-icons_a2c0df_256x240.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-icons_fafafa_256x240.png" />
+    <Content Include="Package\jquery-ui-1.7.2\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Package\jquery-ui-1.7.2\jquery-ui-1.7.2.custom.css" />
+    <Content Include="Package\jquery-ui-1.7.2\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="Package\zebra-dialog-1.2\css\confirmation.png" />
+    <Content Include="Package\zebra-dialog-1.2\css\error.png" />
+    <Content Include="Package\zebra-dialog-1.2\css\information.png" />
+    <Content Include="Package\zebra-dialog-1.2\css\question.png" />
+    <Content Include="Package\zebra-dialog-1.2\css\warning.png" />
+    <Content Include="Package\zebra-dialog-1.2\css\zebra_dialog.css" />
+    <Content Include="Package\zebra-dialog-1.2\javascript\jquery-1.7.2.js" />
+    <Content Include="Package\zebra-dialog-1.2\javascript\zebra_dialog.js" />
+    <Content Include="Package\zebra-dialog-1.2\javascript\zebra_dialog.src.js" />
+    <Content Include="Utility\ValidateCode.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WISD.CarERP.BLL\WISD.CarERP.BLL.csproj">
+      <Project>{DA38027A-F569-41DB-BECC-3D4FEA646502}</Project>
+      <Name>WISD.CarERP.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WISD.CarERP.Common\WISD.CarERP.Common.csproj">
+      <Project>{A780C9AF-564D-4D17-A58C-D1E70D25DB2C}</Project>
+      <Name>WISD.CarERP.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WISD.CarERP.Model\WISD.CarERP.Model.csproj">
+      <Project>{2A7FC3CF-38AB-4F10-A0C8-64E9077729D1}</Project>
+      <Name>WISD.CarERP.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\FCKedit\editor\css\images\Thumbs.db" />
+    <None Include="Package\FCKedit\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
+    <None Include="Package\FCKedit\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
+    <None Include="Package\FCKedit\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
+    <None Include="Package\FCKedit\editor\filemanager\browser\default\images\icons\Thumbs.db" />
+    <None Include="Package\FCKedit\editor\filemanager\browser\default\images\Thumbs.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10135</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

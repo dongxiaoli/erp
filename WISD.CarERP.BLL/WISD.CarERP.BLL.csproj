@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA38027A-F569-41DB-BECC-3D4FEA646502}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WISD.CarERP.BLL</RootNamespace>
+    <AssemblyName>WISD.CarERP.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Module\AutoParts\PurchaseReturn\PurchaseReturnModule.cs" />
+    <Compile Include="Module\AutoParts\PurchaseStorage\PurchaseStorageModule.cs" />
+    <Compile Include="Module\AutoParts\SalesReturn\SalesReturnModule.cs" />
+    <Compile Include="Module\AutoParts\SalesSlip\SalesSlipModule.cs" />
+    <Compile Include="Module\AutoRepair\CompletionAudit\CompletionAuditModule.cs" />
+    <Compile Include="Module\AutoRepair\DelegateRepair\DelegateRepairModule.cs" />
+    <Compile Include="Module\AutoRepair\MaintenancePicking\MaintenancePickingModule.cs" />
+    <Compile Include="Module\AutoRepair\WorkDispatch\WorkDispatchModule.cs" />
+    <Compile Include="Module\BasicData\DataDictionary\DataDictionaryModule.cs" />
+    <Compile Include="Module\BusinessAccounting\AccountingPeriod\AccountingPeriodModule.cs" />
+    <Compile Include="Module\BusinessAccounting\CostManage\CostManageModule.cs" />
+    <Compile Include="Module\BusinessAccounting\UnsureInventory\UnsureInventoryModule.cs" />
+    <Compile Include="Module\CommonModule.cs" />
+    <Compile Include="Module\InventoryManage\InventoryFetch\InventoryFetchModule.cs" />
+    <Compile Include="Module\InventoryManage\InventoryQuery\InventoryQueryModule.cs" />
+    <Compile Include="Module\InventoryManage\InventoryTransfer\InventoryTransferModule.cs" />
+    <Compile Include="Module\InventoryManage\MaterialReturn\MaterialReturnModule.cs" />
+    <Compile Include="Module\InventoryManage\ProfitLoss\ProfitLossModule.cs" />
+    <Compile Include="Module\InventoryManage\UnsalableQuery\UnsalableQueryModule.cs" />
+    <Compile Include="Module\ReceivablesPayables\PayablesDetail\PayablesDetailModule.cs" />
+    <Compile Include="Module\ReceivablesPayables\PayablesLedger\PayablesLedgerModule.cs" />
+    <Compile Include="Module\ReceivablesPayables\ReceivablesDetail\ReceivablesDetailModule.cs" />
+    <Compile Include="Module\ReceivablesPayables\ReceivablesLedger\ReceivablesLedgerModule.cs" />
+    <Compile Include="Module\ReceivablesPayables\VoucherEntry\VoucherEntryModule.cs" />
+    <Compile Include="Module\SystemManage\CompanyManage\CompanyManageModule.cs" />
+    <Compile Include="Module\SystemManage\DeptManage\DeptManageModule.cs" />
+    <Compile Include="Module\SystemManage\RoleManage\RoleManageModule.cs" />
+    <Compile Include="Module\SystemManage\UserManage\UserManageModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T_CF_Company.cs" />
+    <Compile Include="T_CF_Department.cs" />
+    <Compile Include="T_CF_ERP_DictionaryData.cs" />
+    <Compile Include="T_CF_ERP_DictionaryField.cs" />
+    <Compile Include="T_CF_ERP_DictionaryItem.cs" />
+    <Compile Include="T_CF_Menu.cs" />
+    <Compile Include="T_CF_Role.cs" />
+    <Compile Include="T_CF_User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utility\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WISD.CarERP.Common\WISD.CarERP.Common.csproj">
+      <Project>{A780C9AF-564D-4D17-A58C-D1E70D25DB2C}</Project>
+      <Name>WISD.CarERP.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WISD.CarERP.DAL\WISD.CarERP.DAL.csproj">
+      <Project>{1C331521-02EE-481E-B274-C7448F97B3BF}</Project>
+      <Name>WISD.CarERP.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WISD.CarERP.Model\WISD.CarERP.Model.csproj">
+      <Project>{2A7FC3CF-38AB-4F10-A0C8-64E9077729D1}</Project>
+      <Name>WISD.CarERP.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
